@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: RazerF5;
+    src: url(RazerF5.woff);
+}
+
+@font-face {
+    font-family: RazerF5SemiBold;
+    src: url(RazerF5SemiBold.woff);
+}
+
+body {
+    font-family: RazerF5, sans-serif;
+}
+
+nav {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 2px solid #44D62C;
+    width: 100%;
+    position: fixed;
+}
+
+nav .mainMenu .logo {
+    width: 35px;
+    height: 35px;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    margin-left: 24px;
+}
+
+@media (min-width: 786px) {
+    nav .openMenu {
+        display: none;
+    }
+
+    nav .closeMenu {
+        display: none;
+    }
+}
+
+nav .mainMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav .mainMenu li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #888888;
+}
+
+nav .mainMenu li a:hover {
+    color: #fff;
+}
+
+nav .mainMenu li {
+    list-style: none;
+}
+
+nav .mainMenu li svg {
+    width: 23px;
+    height: 19.2px;
+    fill: #888888;
+    font-weight: bold;
+}
+
+nav .mainMenu li svg:hover {
+    fill: #fff;
+}
+
+nav .mainMenu li .cart {
+    margin-right: 24px;
+}
