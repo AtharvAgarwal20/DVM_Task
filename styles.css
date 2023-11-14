@@ -21,7 +21,7 @@ body {
 nav {
     background-color: #000;
     color: #fff;
-    border-bottom: 2px solid #44D62C;
+    border-bottom: 0.8px solid #44D62C;
     width: 100%;
     position: fixed;
 }
@@ -80,4 +80,30 @@ nav .mainMenu li svg:hover {
 
 nav .mainMenu li .cart {
     margin-right: 24px;
+}
+
+header .banner {
+    display: block;
+    height: 44px;
+    width: 100%;
+    background-color: #555555;
+    position: relative;
+    top: 64.8px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .banner p {
+    padding: 11.5px 40px 9.5px 30px;
+    color: #eeeeee;
+}
+
+header .banner p a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+header .banner p a:hover {
+    text-decoration: underline;
 }
