@@ -24,6 +24,7 @@ nav {
     border-bottom: 0.8px solid #44D62C;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 nav .mainMenu .logo {
@@ -39,9 +40,10 @@ nav .mainMenu .logo {
         display: none;
     }
 
-    nav .closeMenu {
-        display: none;
-    }
+}
+
+nav .closeMenu {
+    display: none;
 }
 
 nav .mainMenu {
@@ -82,6 +84,42 @@ nav .mainMenu li .cart {
     margin-right: 24px;
 }
 
+nav .openMenu .cart {
+    margin-right: 24px;
+    width: 23px;
+    height: 19.2px;
+    fill: #888888;
+    font-weight: bold;
+}
+
+nav .openMenu .cart:hover {
+    fill: #fff;
+}
+
+nav .openMenu .logo {
+    width: 35px;
+    height: 35px;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    margin-left: 24px;
+}
+
+@media(max-width:786px) {
+    nav .mainMenu .navLink {
+        display: none;
+    }
+
+    nav .openMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .openMenu img {
+        margin-left: 24px;
+    }
+}
+
 header .banner {
     display: block;
     height: 44px;
@@ -94,9 +132,18 @@ header .banner {
     text-align: center;
 }
 
+@media(max-width:860px) {
+    header .banner {
+        height: 61px;
+        z-index: 2;
+    }
+}
+
 header .banner p {
     padding: 11.5px 40px 9.5px 30px;
     color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 header .banner p a {
@@ -105,5 +152,63 @@ header .banner p a {
 }
 
 header .banner p a:hover {
+    text-decoration: underline;
+}
+
+.front {
+    position: absolute;
+    top: 108px;
+    width: 100%;
+    height: 100%;
+}
+
+.front .cyberRampage a {
+    height: 75vh;
+    width: 100%;
+}
+
+.front .cyberRampage {
+    height: 75vh;
+    width: 100%;
+    min-height: 700px;
+    background-image: url(cyber-weekend-early-access-2023-homepage-desktop2x.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.front .cyberRampage h2 {
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center !important;
+    font-family: RazerF5, sans-serif;
+    font-size: 3.5rem;
+    padding-top: 3.75rem;
+}
+
+.front .cyberRampage h3 {
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center !important;
+    font-family: RazerF5, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.front .cyberRampage p {
+    color: #44D62C;
+    margin: 0 auto;
+    padding-top: 6px;
+    text-align: center !important;
+    font-family: RazerF5, sans-serif;
+    font-size: 1.3125rem;
+    font-weight: 300;
+}
+
+.front .cyberRampage p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.front .cyberRampage p a:hover {
     text-decoration: underline;
 }
