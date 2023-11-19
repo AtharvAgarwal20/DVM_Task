@@ -144,7 +144,7 @@ header .banner {
 
 @media(max-width:860px) {
     header .banner {
-        height: 61px;
+        height: 54.6px;
         z-index: 2;
     }
 }
@@ -152,6 +152,7 @@ header .banner {
 @media(max-width:480px) {
     header .banner {
         height: 71.4px;
+        z-index: 2;
     }
 }
 
