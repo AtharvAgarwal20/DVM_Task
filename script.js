@@ -4,7 +4,6 @@ const openMenu = document.querySelector(".openMenu");
 const closeMenu = document.querySelector(".closeMenu");
 const cartIcon = document.querySelector("cart")
 const nav = document.getElementById("navbar")
-// const menuIcon = document.querySelector(".menuIcon");
 
 function openMenuHelper() {
     mainMenu.style.flexDirection = "column";
