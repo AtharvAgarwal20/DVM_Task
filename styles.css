@@ -129,6 +129,10 @@ nav .openMenu .logo {
     nav .openMenu img {
         margin-left: 24px;
     }
+
+    nav .openMenu .logo {
+        margin-left: 0;
+    }
 }
 
 header .banner {
