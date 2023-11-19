@@ -34,9 +34,27 @@ function closeMenuHelper() {
     closeMenu.style.display = "none";
 }
 
+let screenWidth = window.screen.width
+
+function resizingReset() {
+    if (screenWidth > 786.5) {
+        mainMenu.removeAttribute('style');
+        menuItems.forEach(
+            function (menuItem) {
+                menuItem.removeAttribute('style');
+            }
+        );
+        openMenu.removeAttribute('style');
+        closeMenu.removeAttribute('style');
+        cartIcon.removeAttribute('style');
+        nav.removeAttribute('style');
+    }
+}
+
 function cartOpenHelper() {
 
 }
 
+window.addEventListener("resize", resizingReset);
 openMenu.addEventListener("click", openMenuHelper);
 closeMenu.addEventListener("click", closeMenuHelper);
