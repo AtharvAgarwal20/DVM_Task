@@ -14,8 +14,19 @@
     src: url(RazerF5SemiBold.woff);
 }
 
+@font-face {
+    font-family: RazerF5Bold;
+    src: url(RazerF5Bold.woff);
+}
+
+@font-face {
+    font-family: RazerF5Light;
+    src: url(RazerF5Light.woff);
+}
+
 body {
     font-family: RazerF5, sans-serif;
+    background-color: #222222;
 }
 
 nav {
@@ -24,7 +35,7 @@ nav {
     border-bottom: 0.8px solid #44D62C;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
 }
 
 nav .mainMenu .logo {
@@ -127,7 +138,6 @@ header .banner {
     background-color: #555555;
     position: relative;
     top: 64.8px;
-    /* max-width: 1200px; */
     margin: 0 auto;
     text-align: center;
 }
@@ -162,21 +172,16 @@ header .banner p a:hover {
     height: 100%;
 }
 
-.front .cyberRampage a {
-    height: 75vh;
-    width: 100%;
-}
-
-.front .cyberRampage {
+.front .highlights {
     height: 75vh;
     width: 100%;
     min-height: 700px;
-    background-image: url(cyber-weekend-early-access-2023-homepage-desktop2x.webp);
     background-position: center;
     background-size: cover;
+    margin-bottom: 10px;
 }
 
-.front .cyberRampage h2 {
+.front .highlights h2 {
     color: #ffffff;
     margin: 0 auto;
     text-align: center !important;
@@ -185,7 +190,7 @@ header .banner p a:hover {
     padding-top: 3.75rem;
 }
 
-.front .cyberRampage h3 {
+.front .highlights h3 {
     color: #ffffff;
     margin: 0 auto;
     text-align: center !important;
@@ -194,7 +199,7 @@ header .banner p a:hover {
     font-weight: 300;
 }
 
-.front .cyberRampage p {
+.front .highlights p {
     color: #44D62C;
     margin: 0 auto;
     padding-top: 6px;
@@ -204,11 +209,220 @@ header .banner p a:hover {
     font-weight: 300;
 }
 
-.front .cyberRampage p a {
+.front .highlights p a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.front .cyberRampage p a:hover {
+.front .highlights p a:hover {
     text-decoration: underline;
+}
+
+@media(max-width:1200px) {
+    .front .highlights {
+        height: 75vh;
+        min-height: 0px;
+    }
+}
+
+@media(max-width:767.98px) {
+    .front .highlights {
+        height: 75vh;
+        min-height: 0px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+    .front .highlights h2 {
+        font-size: 2rem;
+    }
+
+    .front .highlights h3 {
+        font-size: 1.1825rem;
+    }
+
+    .front .highlights p {
+        font-size: 1.0625rem;
+    }
+}
+
+.front #razerBlade #ribbon {
+    padding-top: 1.5625rem;
+    line-height: 1.5em;
+    font-size: 1.125rem;
+}
+
+.front #razerBlade #ribbon #tag {
+    line-height: 1em;
+    background-color: #ff9c07;
+    color: #000 !important;
+    font-size: 0.875rem;
+    margin: 0 auto;
+    height: fit-content;
+    max-width: fit-content;
+    padding: 0.3em 1em;
+}
+
+.front #razerBlade #ribbon #tag span {
+    display: block;
+    font-weight: 900;
+}
+
+.front #razerBlade #ribbon #tag span:first-of-type {
+    font-size: 0.6rem;
+}
+
+.front #razerBlade h2 {
+    padding-top: 0.7em;
+}
+
+.front #cyberRampage {
+    background-image: url(cyber-weekend-early-access-2023-homepage-desktop2x.webp);
+}
+
+.front #immersiveLine {
+    background-image: url(razer-immersive-campaign-homepage-desktop2x.webp);
+}
+
+.front #razerBlade {
+    background-image: url(razer-blade16-lamborghini-homepage-desktop2x.webp);
+}
+
+@media(max-width:767.98px) {
+    .front #cyberRampage {
+        background-image: url(cyber-weekend-early-access-2023-homepage-mobile2x.webp);
+    }
+
+    .front #immersiveLine {
+        background-image: url(razer-immersive-campaign-homepage-mobile2x.webp);
+    }
+
+    .front #razerBlade {
+        background-image: url(razer-blade16-lamborghini-homepage-mobile2x.webp);
+    }
+}
+
+.front #razerBlade p span {
+    padding: 0px 16px;
+}
+
+.front .subHighlights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.front .subHighlights section {
+    height: 580px;
+    width: 49.5%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.front .subHighlights section h2 {
+    font-size: 2.5rem;
+    font-family: RazerF5, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding-top: 3.375rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.front .subHighlights section h3 {
+    font-size: 1.313rem;
+    font-family: RazerF5, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.front .subHighlights section p span {
+    font-size: 1.0625rem;
+    color: #44d62c;
+    padding: 0 16px;
+}
+
+.front .subHighlights section p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.front .subHighlights section p a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:767.98px) {
+    .front .subHighlights {
+        display: block;
+    }
+
+    .front .subHighlights section {
+        width: 100%;
+        display: block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .front .subHighlights section h2 {
+        font-size: 2rem;
+    }
+
+    .front .subHighlights section h3 {
+        font-size: 1.1875rem;
+    }
+}
+
+.front .subHighlights #fujinPro {
+    background-image: url(fujin-pro-b-950x580-desktop.webp);
+}
+
+.front .subHighlights #blade16And18 {
+    background-image: url(mercury-blade16-blade18-b-950x580-desktop.webp);
+}
+
+.front .subHighlights #dolce {
+    background-image: url(dolce&gabbana-launch-b-950x580-desktop.webp);
+}
+
+.front .subHighlights #viperMini {
+    background-image: url(global-esports-awards-b-950x580-desktop.webp);
+}
+
+.front .subHighlights #xmas {
+    background-image: url(sneki-snek-b-950x580-desktop.webp);
+}
+
+.front .subHighlights #giftCard {
+    background-image: url(ebonus-card-b-950x580-desktop.webp);
+}
+
+@media(max-width:767.98px) {
+    .front .subHighlights #fujinPro {
+        background-image: url(fujin-pro-b-480x615-mobile.webp);
+    }
+
+    .front .subHighlights #blade16And18 {
+        background-image: url(mercury-blade16-blade18-b-480x615-mobile.webp);
+    }
+
+    .front .subHighlights #dolce {
+        background-image: url(dolce&gabbana-launch-b-480x615-mobile.webp);
+    }
+
+    .front .subHighlights #viperMini {
+        background-image: url(global-esports-awards-b-480x615-mobile.webp);
+    }
+
+    .front .subHighlights #xmas {
+        background-image: url(sneki-snek-b-480x615-mobile.webp);
+    }
+
+    .front .subHighlights #giftCard {
+        background-image: url(ebonus-card-b-480x615-mobile.webp);
+    }
 }
