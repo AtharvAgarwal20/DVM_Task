@@ -130,6 +130,10 @@ nav .openMenu .logo {
         margin-left: 24px;
     }
 
+    nav .closeMenu img {
+        margin-left: 24px;
+    }
+
     nav .openMenu .logo {
         margin-left: 0;
     }
