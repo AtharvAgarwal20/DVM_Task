@@ -3,7 +3,7 @@ const menuItems = document.querySelectorAll(".menuItem");
 const openMenu = document.querySelector(".openMenu");
 const closeMenu = document.querySelector(".closeMenu");
 const cartIcon = document.querySelector("cart")
-const nav = document.getElementById("navbar")
+const nav = document.querySelector("#navbar")
 
 function openMenuHelper() {
     mainMenu.style.flexDirection = "column";
